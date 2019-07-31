@@ -45,7 +45,7 @@ import {
   }
 
   const tab2_Option = {
-    tabBarLabel: "Asset",
+    tabBarLabel: "File Manager",
     tabBarIcon: ({ focused }) => (
       <Image
         style={{

@@ -50,7 +50,7 @@ export default class ScannerScreen extends Component {
               onPress={this.scanAgain}
               style={styles.buttonTouchable}
             >
-              <Text style={styles.buttonText}>SCAN</Text>
+              <Text style={styles.buttonText}>Scan Barcode or QRCode</Text>
             </TouchableOpacity>
           }
         />
@@ -126,6 +126,6 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fa4a4d"
+    backgroundColor: "#1872E4"
   }
 });
