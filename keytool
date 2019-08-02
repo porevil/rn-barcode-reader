@@ -1,0 +1,1 @@
+sudo keytool -genkey -v -keystore barcode.keystore -alias barcode -keyalg RSA -keysize 2048 -validity 10000

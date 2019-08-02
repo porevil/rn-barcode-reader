@@ -1,4 +1,4 @@
-import React, { Component,Animated, Easing } from "react";
+import React, { Component, Animated, Easing } from "react";
 import {
   View,
   Alert,
@@ -6,20 +6,53 @@ import {
   Image,
   ImageBackground,
   Text,
-  TouchableOpacity
+  TouchableOpacity,
+  TextInput
 } from "react-native";
 
 import QRCodeScanner from "react-native-qrcode-scanner";
+import AsyncStorage from "@react-native-community/async-storage";
+
+class IconTextInput extends Component {
+  render() {
+    // destructuring pattern
+    const { icon, hint, ispassword, onchange } = this.props;
+
+    return (
+      <View style={{ flexDirection: "row" }}>
+        {/* <Icon name={icon} size={25} /> */}
+        <TextInput
+          onChangeText={onchange}
+          secureTextEntry={ispassword}
+          autoCapitalize="none"
+          placeholder={hint}
+          style={{ flex: 1, marginLeft: 16, color: "white" }}
+        />
+      </View>
+    );
+  }
+}
+
 export default class ScannerScreen extends Component {
   constructor(props) {
     super(props);
-    this.state = { isReady: false };
+    this.state = {
+      isReady: false,
+      owner_name: ""
+    };
+
     setTimeout(() => {
       this.setState({ isReady: true });
     }, 1500);
   }
 
+  async componentDidMount() {
+    this.state.owner_name = await AsyncStorage.getItem("owner_name");
+  }
 
+  async componentWillUnmount() {
+    await AsyncStorage.setItem("owner_name", this.state.owner_name);
+  }
 
   scanAgain = () => {
     // let callback = this.props.navigation.getParam("resultCallback")
@@ -39,8 +72,10 @@ export default class ScannerScreen extends Component {
     return (
       <View style={{ flex: 0.8, width: "100%" }}>
         <QRCodeScanner
-        // ref is represent QRCodeScanner
-        ref={node=>{this.scanner=node}}
+          // ref is represent QRCodeScanner
+          ref={node => {
+            this.scanner = node;
+          }}
           showMarker
           style={{ flex: 1 }}
           // bind this mean "this" of global scope
@@ -50,7 +85,20 @@ export default class ScannerScreen extends Component {
               onPress={this.scanAgain}
               style={styles.buttonTouchable}
             >
-              <Text style={styles.buttonText}>Scan Barcode or QRCode</Text>
+              {/* <View>
+                <Text style={styles.buttonText}>Scan Barcode or QRCode</Text>
+              </View> */}
+              <View>
+
+
+                <TextInput
+                  value={this.state.owner_name}
+                  onChangeText={text => this.setState({ owner_name: text })}
+                  autoCapitalize="yes"
+                  placeholder="Owner Name"
+                  style={{ flex: 1, marginLeft: 16, color: "white" }}
+                />
+              </View>
             </TouchableOpacity>
           }
         />
@@ -60,7 +108,6 @@ export default class ScannerScreen extends Component {
 
   render() {
     return (
-        
       <ImageBackground
         source={require("./assets/img/gradient_bg.png")}
         resizeMode={"stretch"}
@@ -127,5 +174,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#1872E4"
-  }
+  },
+  icon: { width: 30, height: 30, backgroundColor: "yellow", borderRadius: 15 }
 });

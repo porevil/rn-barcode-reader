@@ -25,7 +25,7 @@ import {
   
   } from "react-navigation";
 
-
+  
   const tab1_Option = {
     tabBarLabel: "Barcode",
     tabBarIcon: ({ focused }) => (
