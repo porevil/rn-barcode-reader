@@ -1,7 +1,6 @@
 import React, { Component, Animated, Easing } from "react";
 import {
   View,
-  Alert,
   StyleSheet,
   Image,
   ImageBackground,
@@ -10,35 +9,37 @@ import {
   TextInput
 } from "react-native";
 
+
 import QRCodeScanner from "react-native-qrcode-scanner";
 import AsyncStorage from "@react-native-community/async-storage";
 
-class IconTextInput extends Component {
-  render() {
-    // destructuring pattern
-    const { icon, hint, ispassword, onchange } = this.props;
+// class IconTextInput extends Component {
+//   render() {
+//     // destructuring pattern
+//     const { icon, hint, ispassword, onchange } = this.props;
 
-    return (
-      <View style={{ flexDirection: "row" }}>
-        {/* <Icon name={icon} size={25} /> */}
-        <TextInput
-          onChangeText={onchange}
-          secureTextEntry={ispassword}
-          autoCapitalize="none"
-          placeholder={hint}
-          style={{ flex: 1, marginLeft: 16, color: "white" }}
-        />
-      </View>
-    );
-  }
-}
+//     return (
+//       <View style={{ flexDirection: "row" }}>
+//         {/* <Icon name={icon} size={25} /> */}
+//         <TextInput
+//           onChangeText={onchange}
+//           secureTextEntry={ispassword}
+//           autoCapitalize="none"
+//           placeholder={hint}
+//           style={{ flex: 1, marginLeft: 16, color: "white" }}
+//         />
+//       </View>
+//     );
+//   }
+// }
 
 export default class ScannerScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
       isReady: false,
-      owner_name: ""
+      owner_name: "",
+      barcode: ""
     };
 
     setTimeout(() => {
@@ -63,46 +64,50 @@ export default class ScannerScreen extends Component {
   };
 
   onSuccess(e) {
+    // this.state.visible = true;
+    // this.showDialog();
     const callback = this.props.navigation.getParam("resultCallback");
     callback(e.data);
     this.props.navigation.goBack();
   }
 
+
+
   showScanner = () => {
     return (
-      <View style={{ flex: 0.8, width: "100%" }}>
-        <QRCodeScanner
-          // ref is represent QRCodeScanner
-          ref={node => {
-            this.scanner = node;
-          }}
-          showMarker
-          style={{ flex: 1 }}
-          // bind this mean "this" of global scope
-          onRead={this.onSuccess.bind(this)}
-          bottomContent={
-            <TouchableOpacity
-              onPress={this.scanAgain}
-              style={styles.buttonTouchable}
-            >
-              {/* <View>
-                <Text style={styles.buttonText}>Scan Barcode or QRCode</Text>
-              </View> */}
-              <View>
-
-
-                <TextInput
-                  value={this.state.owner_name}
-                  onChangeText={text => this.setState({ owner_name: text })}
-                  autoCapitalize="yes"
-                  placeholder="Owner Name"
-                  style={{ flex: 1, marginLeft: 16, color: "white" }}
-                />
-              </View>
-            </TouchableOpacity>
-          }
-        />
-      </View>
+        <View style={{ flex: 0.8, width: "100%" }}>
+          <QRCodeScanner
+            // ref is represent QRCodeScanner
+            ref={node => {
+              this.scanner = node;
+            }}
+            showMarker
+            style={{ flex: 1 }}
+            // bind this mean "this" of global scope
+            onRead={this.onSuccess.bind(this)}
+            bottomContent={
+              <TouchableOpacity
+                onPress={this.scanAgain}
+                style={styles.buttonTouchable}
+              >
+                <View>
+                  {/* <Text style={styles.buttonText}>
+                    Please input owner name before scan
+                  </Text> */}
+                  <View>
+                    <TextInput
+                      value={this.state.owner_name}
+                      onChangeText={text => this.setState({ owner_name: text })}
+                      autoCapitalize="yes"
+                      placeholder="Owner Name"
+                      style={styles.buttonText}
+                    />
+                  </View>
+                </View>
+              </TouchableOpacity>
+            }
+          />
+        </View>
     );
   };
 
@@ -168,7 +173,7 @@ const styles = StyleSheet.create({
     color: "#FFF"
   },
   buttonTouchable: {
-    height: 50,
+    height: 70,
     width: "100%",
     alignSelf: "center",
     justifyContent: "center",

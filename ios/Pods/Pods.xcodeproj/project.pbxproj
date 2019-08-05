@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26E049D648845B142FE19DFCA82F2A6F /* Pods-barcodeScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B9D61FB356185A7F769B2F6DB26663 /* Pods-barcodeScanner-dummy.m */; };
+		9B59FF7F0530D5A99C6A6B124001B31F /* Pods-barcodeScannerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D2ED3F06E548D62815CDD12064766A /* Pods-barcodeScannerTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		641FC3E2018EB4950955811ACE604E1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F35EE47D46CA7229855DAF0923864D6E;
+			remoteInfo = "Pods-barcodeScanner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11416051F04C7C87BD877F948763613F /* Pods-barcodeScanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-barcodeScanner-acknowledgements.plist"; sourceTree = "<group>"; };
+		16AE06C917B52C761A5006CEB2AFA369 /* Pods-barcodeScanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-barcodeScanner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		52AA6B99C3BF5D5C0899A5C1CC54AECC /* Pods-barcodeScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-barcodeScanner.release.xcconfig"; sourceTree = "<group>"; };
+		57B397890859A174ADECC74BF457AB53 /* Pods-barcodeScannerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-barcodeScannerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E19E3F9952E8FB242A36A48432CD957 /* Pods-barcodeScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-barcodeScannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		73B9D61FB356185A7F769B2F6DB26663 /* Pods-barcodeScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-barcodeScanner-dummy.m"; sourceTree = "<group>"; };
+		77E4C81D19E0A960E58DD4FAEEDFBFE1 /* libPods-barcodeScanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-barcodeScanner.a"; path = "libPods-barcodeScanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E75C820ADA6A624E329C75112CFC608 /* Pods-barcodeScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-barcodeScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		96893B8DC35AE2BF6320AC8CB94F82DA /* libPods-barcodeScannerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-barcodeScannerTests.a"; path = "libPods-barcodeScannerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		977163618471842BC039EC829E9F2C1D /* Pods-barcodeScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-barcodeScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1D2ED3F06E548D62815CDD12064766A /* Pods-barcodeScannerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-barcodeScannerTests-dummy.m"; sourceTree = "<group>"; };
+		F7206DC50F6A8ED30A0D07EE5F95755E /* Pods-barcodeScannerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-barcodeScannerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79BA9982359A6E08AC44FCC40EC75856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D634595814B69802879D9DB5F7D2BA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1862350E11573B5741C0B4383674D265 /* Pods-barcodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				16AE06C917B52C761A5006CEB2AFA369 /* Pods-barcodeScanner-acknowledgements.markdown */,
+				11416051F04C7C87BD877F948763613F /* Pods-barcodeScanner-acknowledgements.plist */,
+				73B9D61FB356185A7F769B2F6DB26663 /* Pods-barcodeScanner-dummy.m */,
+				7E75C820ADA6A624E329C75112CFC608 /* Pods-barcodeScanner.debug.xcconfig */,
+				52AA6B99C3BF5D5C0899A5C1CC54AECC /* Pods-barcodeScanner.release.xcconfig */,
+			);
+			name = "Pods-barcodeScanner";
+			path = "Target Support Files/Pods-barcodeScanner";
+			sourceTree = "<group>";
+		};
+		7C0AE6F13EFB3DE809E8D89FA39E3DF0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1862350E11573B5741C0B4383674D265 /* Pods-barcodeScanner */,
+				FABD2A7AA6D79FB5E2CF7474974135CF /* Pods-barcodeScannerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AEBCBAC8539145A66F25E9E2A046A6BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77E4C81D19E0A960E58DD4FAEEDFBFE1 /* libPods-barcodeScanner.a */,
+				96893B8DC35AE2BF6320AC8CB94F82DA /* libPods-barcodeScannerTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				AEBCBAC8539145A66F25E9E2A046A6BD /* Products */,
+				7C0AE6F13EFB3DE809E8D89FA39E3DF0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FABD2A7AA6D79FB5E2CF7474974135CF /* Pods-barcodeScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7206DC50F6A8ED30A0D07EE5F95755E /* Pods-barcodeScannerTests-acknowledgements.markdown */,
+				57B397890859A174ADECC74BF457AB53 /* Pods-barcodeScannerTests-acknowledgements.plist */,
+				A1D2ED3F06E548D62815CDD12064766A /* Pods-barcodeScannerTests-dummy.m */,
+				977163618471842BC039EC829E9F2C1D /* Pods-barcodeScannerTests.debug.xcconfig */,
+				5E19E3F9952E8FB242A36A48432CD957 /* Pods-barcodeScannerTests.release.xcconfig */,
+			);
+			name = "Pods-barcodeScannerTests";
+			path = "Target Support Files/Pods-barcodeScannerTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		527CB66EA8387EF36B55C096BAC843A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F18EC54DA59103F8F4DEFEC99EA8F1F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7C5C5F8435F0D38B0FA6DDA9EF347424 /* Pods-barcodeScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E01DDEFC6340133978C5A9BDB7EF3B93 /* Build configuration list for PBXNativeTarget "Pods-barcodeScannerTests" */;
+			buildPhases = (
+				F18EC54DA59103F8F4DEFEC99EA8F1F3 /* Headers */,
+				167514AC9E6D21F173AD1C98ACBE623A /* Sources */,
+				9D634595814B69802879D9DB5F7D2BA8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7645FA78C5E64835A3A5466762295A86 /* PBXTargetDependency */,
+			);
+			name = "Pods-barcodeScannerTests";
+			productName = "Pods-barcodeScannerTests";
+			productReference = 96893B8DC35AE2BF6320AC8CB94F82DA /* libPods-barcodeScannerTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F35EE47D46CA7229855DAF0923864D6E /* Pods-barcodeScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D8F00C64F7DE3CF9B109B6E8482AC4 /* Build configuration list for PBXNativeTarget "Pods-barcodeScanner" */;
+			buildPhases = (
+				527CB66EA8387EF36B55C096BAC843A2 /* Headers */,
+				A069897E780C5210F658F240EEFCA347 /* Sources */,
+				79BA9982359A6E08AC44FCC40EC75856 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-barcodeScanner";
+			productName = "Pods-barcodeScanner";
+			productReference = 77E4C81D19E0A960E58DD4FAEEDFBFE1 /* libPods-barcodeScanner.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AEBCBAC8539145A66F25E9E2A046A6BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F35EE47D46CA7229855DAF0923864D6E /* Pods-barcodeScanner */,
+				7C5C5F8435F0D38B0FA6DDA9EF347424 /* Pods-barcodeScannerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		167514AC9E6D21F173AD1C98ACBE623A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B59FF7F0530D5A99C6A6B124001B31F /* Pods-barcodeScannerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A069897E780C5210F658F240EEFCA347 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E049D648845B142FE19DFCA82F2A6F /* Pods-barcodeScanner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7645FA78C5E64835A3A5466762295A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-barcodeScanner";
+			target = F35EE47D46CA7229855DAF0923864D6E /* Pods-barcodeScanner */;
+			targetProxy = 641FC3E2018EB4950955811ACE604E1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1727A1195A38DEF01D13BEC26F209179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977163618471842BC039EC829E9F2C1D /* Pods-barcodeScannerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E6F27F1FD8C2E686ACB2566908A5A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E19E3F9952E8FB242A36A48432CD957 /* Pods-barcodeScannerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		98308E29DF7DE1747592C266E67B65DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52AA6B99C3BF5D5C0899A5C1CC54AECC /* Pods-barcodeScanner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBC1B2BC0E1134F869CD82F643650E93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E75C820ADA6A624E329C75112CFC608 /* Pods-barcodeScanner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D8F00C64F7DE3CF9B109B6E8482AC4 /* Build configuration list for PBXNativeTarget "Pods-barcodeScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC1B2BC0E1134F869CD82F643650E93 /* Debug */,
+				98308E29DF7DE1747592C266E67B65DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E01DDEFC6340133978C5A9BDB7EF3B93 /* Build configuration list for PBXNativeTarget "Pods-barcodeScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1727A1195A38DEF01D13BEC26F209179 /* Debug */,
+				1E6F27F1FD8C2E686ACB2566908A5A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

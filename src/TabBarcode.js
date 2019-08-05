@@ -14,6 +14,12 @@ import {
 } from "react-native";
 import RNFS from "react-native-fs";
 import AsyncStorage from "@react-native-community/async-storage";
+import Dialog, {
+  DialogTitle,
+  DialogContent,
+  DialogButton,
+  DialogFooter
+} from "react-native-popup-dialog";
 
 export default class TabBarcode extends Component {
   constructor(props) {
@@ -21,20 +27,22 @@ export default class TabBarcode extends Component {
     this.state = {
       owner_name: "",
       dialogShow: false,
-      visible: true
+      visible: false,
+      barcode: "",
+      value_write:""
     };
   }
 
-  async writeToFile(result) {
+  async writeToFile() {
     let encoding = "ascii";
     let savePath = (await RNFS.ExternalDirectoryPath) + "/asset.txt";
     let fileCheck = await RNFS.exists(savePath);
     this.state.owner_name = await AsyncStorage.getItem("owner_name");
-    result = result + "|" + this.state.owner_name + "\r\n";
-
+    this.state.value_write = this.state.value_write + "|" + this.state.owner_name + "\r\n";
+    this.state.visible = false;
     if (fileCheck) {
       console.log("append file ");
-      RNFS.appendFile(savePath, result, encoding)
+      RNFS.appendFile(savePath, this.state.value_write, encoding)
         .then(res => {
           console.log("append file success");
           this.props.navigation.navigate("scanner", {
@@ -46,9 +54,8 @@ export default class TabBarcode extends Component {
         });
     } else {
       console.log("new file success");
-      RNFS.writeFile(savePath, result, encoding)
+      RNFS.writeFile(savePath, this.state.value_write, encoding)
         .then(res => {
-          // Alert.alert("new file success");
           this.props.navigation.navigate("scanner", {
             resultCallback: this.onResult
           });
@@ -61,19 +68,19 @@ export default class TabBarcode extends Component {
   }
 
   onResult = result => {
+    this.state.visible = true;
+    this.state.barcode = result;
     let date = new Date().getDate(); //Current Date
     let month = new Date().getMonth() + 1; //Current Month
     let year = new Date().getFullYear(); //Current Year
     let hours = new Date().getHours(); //Current Hours
     let min = new Date().getMinutes(); //Current Minutes
     let sec = new Date().getSeconds(); //Current Seconds
-    // Alert.alert("Barcode : " + result);
     let fullDate =
       date + "/" + month + "/" + year + " " + hours + ":" + min + ":" + sec;
     result = result + "|" + fullDate;
-    // this.state.visible=true
+    this.state.value_write = result;
     this.setState({ visible: true });
-    this.writeToFile(result).then();
   };
 
   onClickScan = () => {
@@ -82,6 +89,38 @@ export default class TabBarcode extends Component {
     });
   };
 
+  showDialog = () => {
+    return (
+      <View style={styles.container}>
+        <Dialog
+          visible={this.state.visible}
+          dialogTitle={<DialogTitle title="Please Confirm this code" />}
+          footer={
+            <DialogFooter>
+              <DialogButton
+                style={styles.container}
+                text="Cancel"
+                onPress={() => {this.state.visible=false}}
+              />
+              <DialogButton
+                style={styles.container}
+                text="OK"
+                onPress={() => {
+                  this.writeToFile().then(
+                    
+                  );
+                }}
+              />
+            </DialogFooter>
+          }
+        >
+          <DialogContent>
+            <Text>{this.state.barcode}</Text>
+          </DialogContent>
+        </Dialog>
+      </View>
+    );
+  };
 
   render() {
     return (
@@ -95,7 +134,7 @@ export default class TabBarcode extends Component {
               style={{ width: "100%", height: 120, marginTop: 10, padding: 0 }}
               source={require("./assets/img/header_react_native.png")}
             /> */}
-
+        {this.showDialog()}
         <View style={styles.container}>
           <TouchableOpacity
             style={{
